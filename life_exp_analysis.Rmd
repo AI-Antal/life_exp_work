@@ -12,9 +12,13 @@ knitr::opts_chunk$set(echo = TRUE)
 Set working directory
 ```{r, eval=FALSE}
 setwd("C:/Users/ANEESH ANTAL/Desktop/Kogod Docs/STAT 613 Data Science/week1/life_exp")
-library(tidyverse)
 ```
 
+Initialise Libraries
+```{r}
+library(tidyverse)
+library(gapminder)
+```
 
 
 #Life Expectancy Analysis
@@ -32,3 +36,4 @@ d %>%
 
 ```
 
+#Plot
