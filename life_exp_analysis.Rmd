@@ -9,11 +9,26 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Set working directory
+```{r, eval=FALSE}
+setwd("C:/Users/ANEESH ANTAL/Desktop/Kogod Docs/STAT 613 Data Science/week1/life_exp")
+library(tidyverse)
+```
 
-#Analysis
+
+
+#Life Expectancy Analysis
 Here the analysis begins
 
 ```{r}
+
+d <- gapminder::gapminder_unfiltered
+
+d %>% 
+  group_by(year) %>% 
+  filter(lifeExp %in%  max(lifeExp)) %>% 
+  arrange(year)
+  
 
 ```
 
